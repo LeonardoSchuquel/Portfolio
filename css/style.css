@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Overpass:wght@300;500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-family: 'Overpass', sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+.header-conteiner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.nav li{
+    display: inline-block;
+    padding: 20px;
+}
+.nav a:hover{
+    font-size: 25px;
+    text-decoration: underline;
+}
+/*presentation cover*/
+.home{
+    width: 100%;
+    height: 100vh;
+    background-color: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner-home{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+/*presentation*/
+.about-me{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteiner{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.conteiner img{
+    width: 200px;
+    
+}
+.text{
+    width: 500px;
+    margin: 20px;
+}
+h1{
+    padding: 20px;
+}
+/*projects already done*/
+.projects{
+    width: 100vw;
+    height: 100vh;
+    background-color: #110f0f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.project-conteiner{
+    position: relative;
+}
+.project-conteiner .slide{
+    max-width: 1000px;
+    height: 600px;
+    padding: 10px;
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+.project-conteiner .arrow{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    object-fit: cover;
+}
+.project-conteiner .prev{
+    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.project-conteiner .next{
+    right: 0;
+    top: 50%;
+    transform: translate(50%, -50%);
+}
+.arrow:hover{
+    transition-duration: 2s;
+    background-color: #fff;
+}
+.card{
+    min-width: 290px;
+    height: 520px;
+    background-color: #111111;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 20px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    font-family: 'Outfit', sans-serif;
+}
+.card-img{
+    width: 100%;
+    display: block;  
+    border-radius: 15px;  
+}
+.card-conteiner{
+    margin-top: 15px;
+}
+h3{
+    margin: 20px 0;
+}
+.card-conteiner hr{
+    border-color: hsl(215, 32%, 27%);
+    margin: 10px 0;
+}
+.language-logo{
+    display: flex;
+}
+.language-logo img{
+    width: 30px;
+}
+/*Site closure and contact information*/
+footer{
+    background-color: black;
+}
+.footer-conteiner{
+    padding: 40px;
+    width: 250px;
+}
+.footer-conteiner a{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.logo{
+    width: 50px;
+    margin: 20px;
+}
+@media screen and (max-width: 400px){
+    header{
+        position: relative;
+    }
+    .nav{
+        display: none;
+    }
+    .home img{
+        width: 150px;
+    }
+    .about-me{
+        height: 800px;
+    }
+    .conteiner{
+        flex-direction: column;
+    }
+    .text{
+        width: 300px;
+    }
+    .project-conteiner .slide{
+        max-width: 320px;
+    }
+    .arrow:hover{
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .card{
+        margin: 10px;
+    }
+    .footer-conteiner{
+        justify-content: center;
+    }
+}

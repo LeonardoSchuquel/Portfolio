@@ -192,6 +192,6 @@ footer{
         margin: 10px;
     }
     .footer-conteiner{
-        justify-content: center;
+        width: 75px;
     }
 }

@@ -153,18 +153,17 @@ footer{
 }
 .footer-conteiner{
     padding: 40px;
-    width: 250px;
+    width: 200px;
 }
 .footer-conteiner a{
     display: flex;
     align-items: center;
-    justify-content: left;
 }
 .logo{
     width: 50px;
     margin: 20px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1000px){
     header{
         position: relative;
     }
@@ -192,7 +191,7 @@ footer{
     .card{
         margin: 10px;
     }
-    footer{
-        display: none:
+    .footer-conteiner{
+        justify-content: center;
     }
 }

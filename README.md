@@ -15,6 +15,8 @@
 - Marcação HTML5 semântica
 - Propriedades personalizadas do CSS
 - Flexbox
+- Fluxo de trabalho móvel
+- JavaScript
 
 ## links
 
